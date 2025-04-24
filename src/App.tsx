@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import CartPage from "./pages/CartPage";
 import ChatPage from "./pages/ChatPage";
 import ToursPage from "./pages/ToursPage";
+import AboutPage from "./pages/AboutPage";
 import { CartProvider } from "./hooks/useCart";
 import { ChatProvider } from "./hooks/useChat";
 
@@ -26,6 +27,7 @@ const App = () => (
               <Route path="/cart" element={<CartPage />} />
               <Route path="/chat" element={<ChatPage />} />
               <Route path="/tours" element={<ToursPage />} />
+              <Route path="/about" element={<AboutPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
